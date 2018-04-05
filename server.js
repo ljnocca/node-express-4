@@ -61,6 +61,10 @@ app.get('/about', (req, resp) => {
   })
 });
 
+app.get('/projects', (req, resp) => {
+  resp.render('projects.hbs')
+});
+
 app.get('/bad', (req, resp) => {
   resp.send({
     errorMessage: 'Error handling request'
