@@ -62,7 +62,9 @@ app.get('/about', (req, resp) => {
 });
 
 app.get('/projects', (req, resp) => {
-  resp.render('projects.hbs')
+  resp.render('projects.hbs', {
+    pageTitle: 'Projects'
+  })
 });
 
 app.get('/bad', (req, resp) => {
